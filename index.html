@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is a solution to the Room homepage challenge on Frontend Mentor">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Room homepage</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <h1 class="sr-only">Room homepage</h1>
+      <section class="hero-container">
+        <header class="header">
+          <nav class="nav" id="nav">
+            <div class="nav-main">
+              <button aria-label="Open menu" class="menu-btn menu-btn-left" id="menu-open-btn">
+                <img src="/icon-hamburger.svg" alt="Hamgurger menu icon" />
+              </button>
+              <img src="/logo.svg" alt="Logo" />
+              <ul class="nav-items nav-desktop">
+                <li><a href="#">home</a></li>
+                <li><a href="#">shop</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+              </ul>
+            </div>
+            <div class="nav-mobile">
+              <button aria-label="Close menu" class="menu-btn" id="menu-close-btn">
+                <img src="/icon-close.svg" alt="Close icon" />
+              </button>
+              <ul class="nav-items">
+                <li><a href="#">home</a></li>
+                <li><a href="#">shop</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+              </ul>
+            </div>
+            <div class="overlay"></div>
+          </nav>
+          <div class="header-carousel" style="--current-item: 0;" id="carousel">
+            <picture class="header-carousel-item">
+              <source srcset="/desktop-image-hero-1.jpg" media="(min-width: 1110px)" />
+              <img src="/mobile-image-hero-1.jpg" alt="Image 1" class="header-image" />
+            </picture>
+            <picture class="header-carousel-item">
+              <source srcset="/desktop-image-hero-2.jpg" media="(min-width: 1110px)" />
+              <img src="/mobile-image-hero-2.jpg" alt="Image 2" class="header-image" />
+            </picture>
+            <picture class="header-carousel-item">
+              <source srcset="/desktop-image-hero-3.jpg" media="(min-width: 1110px)" />
+              <img src="/mobile-image-hero-3.jpg" alt="Image 3" class="header-image" />
+            </picture>
+          </div>
+          <div class="header-buttons header-buttons-mobile">
+            <button aria-label="Previous slide" class="header-buttons-item" data-previous>
+              <img src="/icon-angle-left.svg" alt="Back" aria-hidden="true" />
+            </button>
+            <button aria-label="Next slide" class="header-buttons-item" data-next>
+              <img src="/icon-angle-right.svg" alt="Next" aria-hidden="true" />
+            </button>
+          </div>
+        </header>
+        <div class="hero-content-container">
+          <div class="hero-content-item open">
+            <h2 class="hero-content-heading">Discover innovative ways to decorate</h2>
+            <p class="hero-content-text">We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.</p>
+            <a href="#" class="hero-content-bottom">
+              <span>Shop now</span>
+              <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="currentColor" fill-rule="nonzero"/></svg>
+            </a>
+          </div>
+          <div class="hero-content-item">
+            <h2 class="hero-content-heading">We are available all across the globe</h2>
+            <p class="hero-content-text">With stores all over the world, it's easy for you to find furniture for your home or place of business. Locally, we’re in most major cities throughout the country. Find the branch nearest you using our store locator. Any questions? Don't hesitate to contact us today.</p>
+            <a href="#" class="hero-content-bottom">
+              <span>Shop now</span>
+              <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="currentColor" fill-rule="nonzero"/></svg>
+            </a>
+          </div>
+          <div class="hero-content-item">
+            <h2 class="hero-content-heading">Manufactured with the best materials</h2>
+            <p class="hero-content-text">Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office.</p>
+            <a href="#" class="hero-content-bottom">
+              <span>Shop now</span>
+              <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="currentColor" fill-rule="nonzero"/></svg>
+            </a>
+          </div>
+          <div class="header-buttons header-buttons-desktop">
+            <button aria-label="Previous slide" class="header-buttons-item" data-previous>
+              <img src="/icon-angle-left.svg" alt="Back" aria-hidden="true" />
+            </button>
+            <button aria-label="Next slide" class="header-buttons-item" data-next>
+              <img src="/icon-angle-right.svg" alt="Next" aria-hidden="true" />
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="about-container">
+        <img src="/image-about-dark.jpg" class="about-image" alt="About dark" />
+        <div class="about-content">
+          <h2 class="about-heading">About our furniture</h2>
+          <p class="about-text">Our multifunctional collection blends design and function to suit your individual taste. Make each room unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture pieces you need, from traditional to contemporary styles or anything in between. Product specialists are available to help you create your dream space.</p>
+        </div>
+        <img src="/image-about-light.jpg" class="about-image" alt="About light" />
+      </section>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
