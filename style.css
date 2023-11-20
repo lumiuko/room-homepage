@@ -363,8 +363,6 @@ li {
 
   .about-container {
     grid-template-columns: repeat(3, 1fr);
-    flex-grow: 1;
-    max-height: 500px;
   }
 
   .about-image {
@@ -398,5 +396,7 @@ li {
 
   .about-container {
     grid-template-columns: 3fr 4fr 3fr;
+    flex-grow: 1;
+    max-height: 500px;
   }
 }
