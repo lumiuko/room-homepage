@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/room-homepage-using-vanilla-css-OoS8NJ3BoR](https://www.frontendmentor.io/solutions/room-homepage-using-vanilla-css-OoS8NJ3BoR)
+- Live Site URL: [https://fe-room-homepage.netlify.app/](https://fe-room-homepage.netlify.app/)
 
 ## My process
 
