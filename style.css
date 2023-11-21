@@ -160,7 +160,8 @@ li {
   justify-content: space-between;
   align-items: center;
   translate: 0 -100%;
-  transition: translate 0.25s ease;
+  visibility: hidden;
+  transition: translate 0.25s ease, visibility 0.25s ease;
 }
 
 .overlay {
@@ -177,6 +178,7 @@ li {
 
 .nav-mobile-open .nav-mobile {
   translate: 0 0;
+  visibility: visible;
 }
 
 .nav-mobile-open .overlay {
